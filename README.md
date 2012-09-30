@@ -1,4 +1,4 @@
-## Geek hunter
+## Geek hunt
 A simple app to search for geeks on github. Powered by [github](http://github.com), [backbone](http://github.com/documentcloud/backbone) and [backbone layoutmanager](http://github.com/tbranyen/backbone.layoutmanager)
 
 ## Todo's
