@@ -1,0 +1,47 @@
+/* H5BP styles. */
+/*@import "../vendor/h5bp/css/style.css";*/
+
+/* Bootstrap styles */
+@import "../vendor/bootstrap/css/bootstrap.css";
+@import "../vendor/bootstrap/css/bootstrap-responsive.css";
+
+/* Add Stylus stylesheets here, alll files ending in .styl will be compiled!
+ * For example: @import "main.styl";
+ *
+ * Note: All stylesheets are relative to `assets/css`.
+ *
+ */
+
+/* Put development-only CSS below this line. */
+
+body {
+  /*padding-top: 60px;  60px to make the container go all the way to the bottom of the topbar */
+}
+html, body {
+  height: 100%;
+}
+footer {
+  color: #666;
+  background: #222;
+  padding: 21px 0 22px 0;
+}
+footer a {
+  color: #999;
+}
+footer a:hover {
+  color: #efefef;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -63px;
+}
+.push {
+  height: 63px;
+}
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container {
+  padding-top: 60px;
+}
+
