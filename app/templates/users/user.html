@@ -1,6 +1,10 @@
-<td><%= model.username %></td>
-<td><%= model.name %></td>
-<td><%= model.repos %></td>
-<td><%= model.followers %></td>
-<td><%= model.language %></td>
-<td><%= model.location %></td>
+<td>
+  <a href="http://github.com/<%= _.escape(model.username) %>" target="_blank">
+    <%= _.escape(model.username) %>
+  </a>
+</td>
+<td><%= _.escape(model.name) %></td>
+<td><%= _.escape(model.repos) %></td>
+<td><%= _.escape(model.followers) %></td>
+<td><%= _.escape(model.language) %></td>
+<td><%= _.escape(model.location) %></td>
