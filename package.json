@@ -1,6 +1,10 @@
 {
   "name": "Geekhunt",
   "version": "0.0.0",
+  "engines": {
+    "node": "0.8.8",
+    "npm": "1.1.9"
+  },
   "description": "A simple app to search for geeks on github",
   "main": "grunt.js",
   "scripts": {
