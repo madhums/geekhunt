@@ -77,7 +77,10 @@ module.exports = function(grunt) {
     // only want to load one stylesheet in index.html.
     mincss: {
       "dist/release/index.css": [
-        "dist/debug/index.css"
+        "assets/css/index.css",
+        "assets/vendor/htbp/css/style.css",
+        "assets/vendor/bootstrap/css/bootstrap.css",
+        "assets/vendor/bootstrap/css/bootstrap-responsive.css",
       ]
     },
 
@@ -93,7 +96,7 @@ module.exports = function(grunt) {
         src: "assets/css/index.css",
 
         // The relative path to use for the @imports.
-        paths: ["assets/css"],
+        paths: ["assets/css", "assets/vendor/bootstrap/css"],
 
         // Additional production-only stylesheets here.
         additional: []
@@ -200,7 +203,7 @@ module.exports = function(grunt) {
   // dist/debug/templates.js, compile all the application code into
   // dist/debug/require.js, and then concatenate the require/define shim
   // almond.js and dist/debug/templates.js into the require.js file.
-  grunt.registerTask("debug", "clean lint jst requirejs concat styles");
+  grunt.registerTask("debug", "clean lint jst requirejs concat");
 
   // The release task will run the debug tasks and then minify the
   // dist/debug/require.js file and CSS files.
