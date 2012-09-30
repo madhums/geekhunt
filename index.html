@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A simple app to search for geeks on github." />
+
+  <title>Finding Geeks!</title>
+
+  <!-- Application styles. -->
+  <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Finding geeks!</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li class=""><a href="http://github.com/madhums/finding-geeks">Fork me!</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main container. -->
+      <div role="main" id="main"></div>
+
+    </div> <!-- /container -->
+    <div class="push"></div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="pull-left">
+        Proudly powered by <a href="http://github.com">Github</a>, <a href="http://github.com/documentcloud/backbone">backbone</a> and <a href="http://github.com/tbranyen/backbone.layoutmanager">backbone layoutmanager</a>!
+      </div>
+      <div class="pull-right">
+        Created and Maintained by <a href="http://madhums.github.com">@madhums</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application source. -->
+  <script data-main="/app/config" src="/assets/js/libs/require.js"></script>
+</body>
+</html>
