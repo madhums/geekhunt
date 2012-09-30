@@ -1,0 +1,24 @@
+{
+  "name": "Geekhunt",
+  "version": "0.0.0",
+  "description": "A simple app to search for geeks on github",
+  "main": "grunt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/madhums/geek-hunter.git"
+  },
+  "keywords": [
+    "geek",
+    "hunt",
+    "github",
+    "hire"
+  ],
+  "dependencies": {
+    "bbb": "latest"
+  },
+  "author": "Madhusudhan Srinivasa",
+  "license": "MIT"
+}
