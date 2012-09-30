@@ -36,4 +36,4 @@ function (app, backbone, User) {
 
   return Home;
 
-})
+});

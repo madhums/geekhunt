@@ -24,7 +24,7 @@ function (app, Backbone, Search) {
 
     initialize: function (options) {
       if (options) {
-        this.search = options.search
+        this.search = options.search;
       }
     }
   });
@@ -35,8 +35,7 @@ function (app, Backbone, Search) {
     tagName: 'tr',
 
     serialize: function () {
-      console.log(this.model.attributes)
-      return { model: this.model.attributes }
+      return { model: this.model.attributes };
     }
   });
 
