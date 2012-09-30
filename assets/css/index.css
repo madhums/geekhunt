@@ -43,3 +43,7 @@ footer a:hover {
 .results {
   padding-top: 70px;
 }
+
+.navbar-inverse .navbar-inner {
+  height: 40px !important;
+}
