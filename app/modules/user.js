@@ -1,9 +1,10 @@
 define([
   'app',
-  'backbone'
+  'backbone',
+  'plugins/jquery.tablesorter'
 ],
 
-function (app, Backbone, Search) {
+function (app, Backbone) {
 
   var User = app.module();
 
@@ -52,6 +53,17 @@ function (app, Backbone, Search) {
           model: user
         }));
       }, this);
+    },
+
+    afterRender: function () {
+      this.$('#results').tablesorter({});
+      this.$('th').click(function (e) {
+        if ($(this).hasClass('headerSortUp')) {
+          $(this).html($(this).data('text')+' &nbsp;<i class="icon-chevron-down"></i>');
+        } else if ($(this).hasClass('headerSortDown')) {
+          $(this).html($(this).data('text')+' &nbsp;<i class="icon-chevron-up"></i>');
+        }
+      });
     },
 
     initialize: function(options) {
