@@ -71,7 +71,7 @@ function (app, Backbone) {
 
       // app.useLayout("main").render();
       this.collection.on("fetch", function() {
-        this.$el.html("<img src='/assets/img/spinner.gif'>");
+        // this.$el.html("<img src='/assets/img/spinner.gif'>");
       }, this);
     }
   });
