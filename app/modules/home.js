@@ -27,6 +27,10 @@ function (app, backbone, User) {
 
       users.fetch();
       app.layout.render();
+    },
+
+    afterRender: function () {
+      this.$(':text').focus();
     }
   });
 
